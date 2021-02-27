@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-image: linear-gradient(to top,#5e5e5e, #2c2c2c);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+ 
+body::before {
+    content: url("https://fontmeme.com/temporary/d9fb9d6faeae3e7f35ed6e61052b197d.png");
+    margin: 10px;
+}
+
+.grid-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #1f70b3;
+    box-shadow: 10px 10px 10px rgb(56, 56, 56);
+    height: 70%;
+    width: 70%;
+    border-radius: 20px;
+}
+.grid {
+    margin: 2.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 500px;
+    cursor: pointer;
+}
+
+img {
+    border-radius: 20px;
+    border: rgb(39, 39, 39) 3px solid;
+    margin: 0.2rem;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    position: absolute;
+    right: 5rem;
+    top: 5rem;
+
+    text-align: center;
+    padding: 0.5rem;
+    width: 13rem;
+    height: 40%;
+    margin: 1rem;
+    font-size: 1.2rem;
+    background-color: rgb(240, 240, 240);
+    color: rgb(54, 54, 54);
+    border-radius: 20px;
+    box-shadow: 7px 7px 11px rgb(77, 77, 77);
+    border: 2px solid rgb(77, 77, 77);
+}
+
+#result {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
